@@ -15,10 +15,11 @@ use App\Models\User;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function ()) {
+Route::get('/', function () {
 	echo 'Hello, DigitalOcean user!';
-}
+});
 
+/*
 Route::get('/user/{email}/{password}', function (Request $request, $email, $password) {
 	Log::info('Somebody tried to log in');
 	
@@ -69,3 +70,4 @@ Route::get('entrance2', function (Request $request) {
 		return view('entrance2');
 	}
 })->name('entrance2');
+*/
