@@ -15,6 +15,9 @@ use App\Models\User;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function ()) {
+	echo 'Hello, DigitalOcean user!';
+}
 
 Route::get('/user/{email}/{password}', function (Request $request, $email, $password) {
 	Log::info('Somebody tried to log in');
