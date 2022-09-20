@@ -16,6 +16,7 @@ use App\Models\User;
 |
 */
 Route::get('/', function () {
+	Log::info('somebody just visited the home page');
 	echo 'Hello, DigitalOcean user!';
 });
 
